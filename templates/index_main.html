@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <base href ="/">
+    <meta charset="UTF-8">
+    <title>Мои любимые юморески</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" type="text/css" rel=stylesheet media="all">
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body style="background-color: #232323;">
+
+<header>
+    <h1 class="main_label">Мои любимые юморески</h1>
+    <form action="blog/search.py" method="get">
+        <p class="main_label">Поиск</p>
+        <input class="j_search" type="text" name="search">
+        <input type="submit" value="Найти">
+    </form>
+</header>
+
+{{jumoreski | safe}}
+
+</body>
+<div>{{response | safe}}</div>
+</html>

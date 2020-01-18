@@ -1,0 +1,46 @@
+.block1 {
+    width: 60%;
+    background: #ccc;
+    margin-left: 20%;
+    position: relative;
+    margin-top: 20px;
+    vertical-align: middle;
+    border: solid 1px black;
+}
+.block2 {
+}
+.j_id {
+    padding-left: 50px
+}
+.j_downvote{
+    width: 30px;
+    position: absolute;
+    padding-right: 42%;
+}
+.j_rating {
+    display: inline;
+}
+.j_upvote{
+    width: 30px;
+    position: absolute;
+    padding-left: 60%;
+}
+.j_addsub{
+    display: inline;
+    padding: 0px 5px;
+    border: 1px solid black;
+}
+.j_text {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0px 20px;
+}
+.j_search{
+    background-color:#aaa;
+}
+.main_label{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+article footer{
+    padding-left:42%;
+}

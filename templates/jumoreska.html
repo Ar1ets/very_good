@@ -1,0 +1,17 @@
+
+<article id={{jid | safe}} class="block2">
+    <div class="block1">
+        <header>
+            <p class="j_id">{{jid | safe}}</p>
+        </header>
+        <p class="j_text">{{jtext | safe}}</p>
+        <footer>
+
+            <div class="j_addsub" id="rminus" style="color: black" onclick="clicc(this, -1, {{jid | safe}})" method="POST">{% csrf_token %}-</div>
+            <div class="j_rating" id=-{{jid | safe}}>{{jrating | safe}}</div>
+            <div class="j_addsub" id="rplus" style="color: black" onclick="clicc(this, 1, {{jid | safe}})" method="POST">{% csrf_token %}+</div>
+
+
+        </footer>
+    </div>
+</article>

@@ -1,0 +1,8 @@
+'UPDATE jumoreski SET rating = -1e98;'
+searchtext="*" UNION SELECT user, password FROM users WHERE user <>""
+'SELECT text, id FROM jumoreski WHERE text LIKE searchtext;'
+searchtext=ClearSQL(searchtext)
+searchtext.replace('"','').replace('*','').replace
+RegExp rgx
+rgx.pattern = "[^a-zA-Zа-яА-я012345678\- ]+"
+rgx.replace(searchtext,'')
